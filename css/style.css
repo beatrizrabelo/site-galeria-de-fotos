@@ -5,6 +5,23 @@
     padding: 0;
 }
 
+.cabecalho {
+    padding: 2% 0% 2% 7.5%;
+    background-color: #F5F5F5;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: #332824;
+    font-size: 14px;
+    font-family: 'Adamina', sans-serif;
+}
+
 body {
     height: 100vh;
     box-sizing: border-box;

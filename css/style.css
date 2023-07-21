@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Homemade+Apple&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    color: #332824;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.apresentacao__conteudo {
+    padding: 6% 7.5% 5% 7.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 55px;
+    font-family: 'Homemade Apple', sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 18px;
+    font-family: 'Adamina', sans-serif;
+}
+
+.apresentacao__imagem {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao__imagem__botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.apresentacao__imagem__botoes a {
+    position: absolute;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.apresentacao__imagem__botoes__1 {
+    background-color: #666666;
+    border: 2px solid #5E5E5E;
+    width: 280px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 21.5px 0;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.apresentacao__imagem__botoes__2 {
+    background-color: #666666;
+    border: 2px solid #5E5E5E;
+    width: 280px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 21.5px 0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.apresentacao__imagem__botoes__3 {
+    background-color: #666666;
+    border: 2px solid #5E5E5E;
+    width: 280px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 21.5px 0;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.apresentacao__imagem__botoes__1:hover,
+.apresentacao__imagem__botoes__2:hover,
+.apresentacao__imagem__botoes__3:hover {
+    background-color: #7B5656;
+    padding: 3%;
+}

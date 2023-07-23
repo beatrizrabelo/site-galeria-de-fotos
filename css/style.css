@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Homemade+Apple&display=swap');
 
+:root {
+    --cor-primaria: #332824;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria: #F5F5F5;
+    --cor-botao: #666666;
+    --cor-borda-botao: #5E5E5E;
+    --cor-hover: #7B5656;
+
+    --fonte-primaria: 'Homemade Apple', sans-serif;
+    --fonte-secundaria: 'Adamina', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +19,7 @@
 
 .cabecalho {
     padding: 2% 0% 2% 7.5%;
-    background-color: #F5F5F5;
+    background-color: var(--cor-terciaria);
 }
 
 .cabecalho__menu {
@@ -17,16 +29,16 @@
 
 .cabecalho__menu__link {
     text-decoration: none;
-    color: #332824;
+    color: var(--cor-primaria);
     font-size: 14px;
-    font-family: 'Adamina', sans-serif;
+    font-family: var(--fonte-secundaria)
 }
 
 body {
     height: 100vh;
     box-sizing: border-box;
-    background-color: #FFFFFF;
-    color: #332824;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
 }
 
 .apresentacao {
@@ -36,30 +48,31 @@ body {
 }
 
 .apresentacao__conteudo {
-    padding: 6% 7.5% 5% 7.5%;
+    padding: 5% 7.5% 5% 7.5%;
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: 75px;
 }
 
 .apresentacao__conteudo__titulo {
     font-size: 55px;
-    font-family: 'Homemade Apple', sans-serif;
+    font-family: var(--fonte-primaria)
 }
 
 .apresentacao__conteudo__texto {
     font-size: 18px;
-    font-family: 'Adamina', sans-serif;
+    font-family: var(--fonte-secundaria)
 }
 
 .apresentacao__imagem {
+    max-width: 50%;
+    width: auto;
     height: auto;
-    width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.apresentacao__imagem__botoes {
+.apresentacao__imagem__elementos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,20 +80,31 @@ body {
     position: relative;
 }
 
-.apresentacao__imagem__botoes a {
+.apresentacao__imagem__elementos a {
     position: absolute;
     padding: 10px;
-    color: #FFFFFF;
+    color: var(--cor-secundaria);
+    font-size: 24px;
+    font-family: var(--cor-secundaria);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
 }
 
-.apresentacao__imagem__botoes__1 {
-    background-color: #666666;
-    border: 2px solid #5E5E5E;
+.apresentacao__imagem__botoes__1,
+.apresentacao__imagem__botoes__2,
+.apresentacao__imagem__botoes__3 {
+    background-color: var(--cor-botao);
+    border: 2px solid var(--cor-borda-botao);
     width: 280px;
     text-align: center;
     border-radius: 2px;
     font-size: 20px;
     padding: 21.5px 0;
+}
+
+.apresentacao__imagem__botoes__1 {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -88,39 +112,32 @@ body {
 }
 
 .apresentacao__imagem__botoes__2 {
-    background-color: #666666;
-    border: 2px solid #5E5E5E;
-    width: 280px;
-    text-align: center;
-    border-radius: 2px;
-    font-size: 20px;
-    padding: 21.5px 0;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .apresentacao__imagem__botoes__3 {
-    background-color: #666666;
-    border: 2px solid #5E5E5E;
-    width: 280px;
-    text-align: center;
-    border-radius: 2px;
-    font-size: 20px;
-    padding: 21.5px 0;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.apresentacao__imagem__botoes__1 img,
+.apresentacao__imagem__botoes__2 img,
+.apresentacao__imagem__botoes__3 img {
+    height: 35px;
+    width: 35px;
+}
+
 .apresentacao__imagem__botoes__1:hover,
 .apresentacao__imagem__botoes__2:hover,
 .apresentacao__imagem__botoes__3:hover {
-    background-color: #7B5656;
-    padding: 3%;
+    background-color: var(--cor-hover);
+    padding: 1.5%;
 }
 
 .rodape {
     padding: 24px;
-    background-color: #332824;
+    background-color: var(--cor-primaria);
 }

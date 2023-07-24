@@ -49,11 +49,24 @@ body {
     height: 100vh;
 }
 
-.apresentacao__conteudo {
+.apresentacao__conteudo__bloco__1 {
+    /* superior, direito, inferior, esquerdo */
+    /* padding: 90px 215px 220px 188px; */
     padding: 5% 7.5% 5% 7.5%;
+    width: 752px;
+    height: 460px;
     display: flex;
     flex-direction: column;
-    gap: 75px;
+    gap: 50px;
+}
+
+.apresentacao__conteudo__bloco__2 {
+    padding: 14% 7.5% 5% 7.5%;
+    width: 752px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .apresentacao__conteudo__titulo {
@@ -66,34 +79,25 @@ body {
     font-family: var(--fonte-secundaria)
 }
 
-.apresentacao__imagem {
-    max-width: 50%;
-    width: auto;
-    height: auto;
-}
-
-.apresentacao__imagem__elementos {
+.apresentacao__elementos {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    align-items: flex-start;
+    gap: 50px;
 }
 
-.apresentacao__imagem__elementos a {
-    position: absolute;
+.apresentacao__elementos a {
     padding: 20px;
     color: var(--cor-secundaria);
     font-size: 24px;
     font-family: var(--cor-secundaria);
     display: flex;
-    justify-content: center;
-    gap: 18px;
+    gap: 10px 16px;
 }
 
-.apresentacao__imagem__botoes__1,
-.apresentacao__imagem__botoes__2,
-.apresentacao__imagem__botoes__3 {
+.apresentacao__botoes__1,
+.apresentacao__botoes__2 {
     background-color: var(--cor-botao);
     border: 2px solid var(--cor-borda-botao);
     width: 280px;
@@ -103,39 +107,18 @@ body {
     padding: 21.5px 0;
 }
 
-.apresentacao__imagem__botoes__1 {
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-.apresentacao__imagem__botoes__2 {
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.apresentacao__imagem__botoes__3 {
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .apresentacao__imagem__botoes__1 img,
-.apresentacao__imagem__botoes__2 img,
-.apresentacao__imagem__botoes__3 img {
+.apresentacao__imagem__botoes__2 img {
     height: 35px;
     width: 35px;
 }
 
-.apresentacao__imagem__botoes__1:hover,
-.apresentacao__imagem__botoes__2:hover,
-.apresentacao__imagem__botoes__3:hover {
+.apresentacao__botoes__1:hover,
+.apresentacao__botoes__2:hover {
     background-color: var(--cor-hover);
 }
 
-.rodape {
+*/ .rodape {
     padding: 24px;
     background-color: var(--cor-primaria);
 }

@@ -66,7 +66,7 @@ body {
     flex: 1;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 50px;
 }
 
 /* Inicio Apresentacao > Galeria */
@@ -112,7 +112,7 @@ body {
 
 .apresentacao__imagem {
     flex: 1;
-    max-width: 50%;
+    max-width: 100%;
     display: flex;
     align-items: flex-start;
 }
@@ -134,6 +134,55 @@ body {
 }
 
 /* Fim Apresentacao > Index */
+
+
+/*Inicio Botoes Conectar*/
+.apresentacao__botoes__galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.apresentacao__botoes__galeria__1,
+.apresentacao__botoes__galeria__2,
+.apresentacao__botoes__galeria__3,
+.apresentacao__botoes__galeria__4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 24px;
+    font-family: var(--cor-secundaria);
+
+
+    color: #000000;
+    background-color: transparent;
+
+
+    width: 424px;
+    height: 70px;
+    border: 1px solid var(--cor-borda-botao);
+    border-radius: 2px;
+
+    padding: 21.5px 0;
+}
+
+.apresentacao__botoe__galeria__1 img,
+.apresentacao__botoes__galeria__2 img {
+    height: 35px;
+    width: 35px;
+}
+
+.apresentacao__botoes__galeria__1:hover,
+.apresentacao__botoes__galeria__2:hover,
+.apresentacao__botoes__galeria__3:hover,
+.apresentacao__botoes__galeria__4:hover {
+    background-color: var(--cor-hover);
+}
+
+/*Fim Botoes Conectar*/
 
 .apresentacao__botoes__1,
 .apresentacao__botoes__2,
